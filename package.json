@@ -1,0 +1,23 @@
+{
+  "name": "lazy-cookie",
+  "version": "1.0.0",
+  "description": "Tiny JavaScript library that makes working with cookies on client side less of a pain",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghasty003/Lasy-Cookie.git"
+  },
+  "keywords": [
+    "Cookies"
+  ],
+  "author": "Ghasty",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Ghasty003/Lasy-Cookie/issues"
+  },
+  "homepage": "https://github.com/Ghasty003/Lasy-Cookie#readme"
+}
