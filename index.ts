@@ -6,7 +6,7 @@ interface OptionalProp {
 
 class LazyCookie {
 
-    
+    /*
     public readonly length: number;
 
     public constructor() {
@@ -46,6 +46,10 @@ class LazyCookie {
         for (let a of arrayOfCookiesKeys) {
           document.cookie = `${a}=; max-Age=-1`;
         }
+    } */
+
+    public hello() {
+        console.log("Hello world");
     }
 }
 
