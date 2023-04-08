@@ -15,7 +15,7 @@ class LazyCookie {
     getItem(name) {
         return this.cookieObject()[name];
     }
-    setItem(key, value, { expires, maxAge }) {
+    setItem(key, value, { expires, maxAge } = {}) {
         document.cookie = `${key}=${value}; max-Age=${maxAge}; expires=${expires}`;
     }
     deleteItem(name) {

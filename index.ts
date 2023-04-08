@@ -32,7 +32,7 @@ class LazyCookie {
         return this.cookieObject()[name];
     }
 
-    public setItem(key: string, value: string, { expires, maxAge }: OptionalProp) {
+    public setItem(key: string, value: string, { expires, maxAge }: OptionalProp = {}) {
         document.cookie = `${key}=${value}; max-Age=${maxAge}; expires=${expires}`;
     }
 
