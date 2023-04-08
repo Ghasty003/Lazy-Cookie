@@ -1,47 +1,31 @@
 class LazyCookie {
-    /*
-    public readonly length: number;
-
-    public constructor() {
+    length;
+    constructor() {
         this.length = document.cookie.split("; ").length;
     }
-
-    private cookieObject() {
+    cookieObject() {
         const map = new Map();
-
         for (let i = 0; i < this.length; i++) {
             const cookieIndex = document.cookie.split("; ")[i].split("=");
-
             map.set(cookieIndex[0], cookieIndex[1]);
         }
-
         const cookieObj = Object.fromEntries(map);
-
         return cookieObj;
     }
-
-
-    public getItem(name: string) {
+    getItem(name) {
         return this.cookieObject()[name];
     }
-
-    public setItem(key: string, value: string, { expires, maxAge }: OptionalProp) {
+    setItem(key, value, { expires, maxAge }) {
         document.cookie = `${key}=${value}; max-Age=${maxAge}; expires=${expires}`;
     }
-
-    public deleteItem(name: string) {
+    deleteItem(name) {
         document.cookie = `${name}=; max-Age=-1`;
     }
-
-    public clear() {
+    clear() {
         const arrayOfCookiesKeys = Object.keys(this.cookieObject());
-    
         for (let a of arrayOfCookiesKeys) {
-          document.cookie = `${a}=; max-Age=-1`;
+            document.cookie = `${a}=; max-Age=-1`;
         }
-    } */
-    hello() {
-        console.log("Hello world");
     }
 }
 const lazycookie = new LazyCookie();
