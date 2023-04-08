@@ -1,5 +1,5 @@
 {
-  "name": "lazy-cookie",
+  "name": "lazycookie",
   "version": "0.0.1",
   "description": "Tiny JavaScript library that makes working with cookies on client side less of a pain",
   "main": "dist/index.js",
@@ -15,7 +15,11 @@
     "url": "git+https://github.com/Ghasty003/Lasy-Cookie.git"
   },
   "keywords": [
-    "Cookies"
+    "Cookies",
+    "Cookie",
+    "Browser",
+    "Storage",
+    "Browser Storage"
   ],
   "author": "Ghasty",
   "license": "Apache-2.0",
