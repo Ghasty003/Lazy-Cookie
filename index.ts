@@ -1,12 +1,16 @@
 interface OptionalProp {
-    expires?: number;
+    expires?: Date;
     maxAge?: number;
 }
 
 
 class LazyCookie {
 
-    
+    /**
+     * Returns total number of key/value pair that exist.
+     * @readonly
+     * @returns {number}
+    */
     public readonly length: number;
 
     public constructor() {
@@ -28,19 +32,49 @@ class LazyCookie {
     }
 
 
-    public getItem(name: string) {
-        return this.cookieObject()[name];
+    /**
+     * Returns the current value associated with the given key, or undefined if the given key does not exist.
+     * @method
+     * @param {string} key - key
+     * @returns {string}
+     */
+    public getItem(key: string): string {
+        return this.cookieObject()[key];
     }
 
-    public setItem(key: string, value: string, { expires, maxAge }: OptionalProp = {}) {
+    /**
+     * Sets the value of the pair identified by key to value, 
+     * creating a new key/value pair if none existed for key previously.
+     * It Overrides already existing key/value pair.
+     * @method
+     * @param {string} key
+     * @param {string} value
+     * @param {Date} expires - when cookie should expire in Date format.
+     * @param {number} maxAge - when cookie should expire in millisecond.
+     * @returns {void}
+     */
+
+    public setItem(key: string, value: string, { expires, maxAge }: OptionalProp = {}): void {
         document.cookie = `${key}=${value}; max-Age=${maxAge}; expires=${expires}`;
     }
 
-    public deleteItem(name: string) {
+    /**
+     * @method
+     * @param {string} name - key
+     * @returns {void}
+     */
+
+    public deleteItem(name: string): void {
         document.cookie = `${name}=; max-Age=-1`;
     }
 
-    public clear() {
+    /**
+     * Removes all key/value pairs, if there are any.
+     * @method
+     * @returns {void}
+     */
+
+    public clear(): void {
         const arrayOfCookiesKeys = Object.keys(this.cookieObject());
     
         for (let a of arrayOfCookiesKeys) {
