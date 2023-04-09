@@ -10,7 +10,7 @@ npm i lazycookie
 
 
 ## Usage
-<h3> <i>It has same methods as localStorage & sessionStorage</i> </h1>
+<p> <i>It has same methods as localStorage & sessionStorage</i> </p>
 
 ```js
 import cookie from "lazycookie";
