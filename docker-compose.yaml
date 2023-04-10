@@ -5,6 +5,6 @@ services:
     container_name: package_c
     ports:
       - '5173:5173'
-    volumes:
+    volumes: 
       - ./:/app
       - /app/node_modules
