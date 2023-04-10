@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  package:
+    build: .
+    container_name: package_c
+    ports:
+      - '5173:5173'
+    volumes:
+      - ./:/app
+      - /app/node_modules
