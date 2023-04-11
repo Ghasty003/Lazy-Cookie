@@ -17,7 +17,7 @@ import cookie from "lazycookie";
 
 cookie.getItem("foo") // returns a string which is the value of the provided parameter.
 
-cookie.setItem("foo", "bar", optional-paramters) // sets item with key of "foo" and value of "bar".
+cookie.setItem("foo", "bar", options) // sets item with key of "foo" and value of "bar".
 
 cookie.deleteItem("foo") // deletes item with key of "foo".
 
