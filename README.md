@@ -23,7 +23,7 @@ cookie.deleteItem("foo") // deletes item with key of "foo".
 
 cookie.clear()  // clears all key/value pair.
 
-cookie.length // returns the total number of key/value pair
+cookie.length // returns the total number of key/value pair.
 ```
 
 ### Optional parameters
