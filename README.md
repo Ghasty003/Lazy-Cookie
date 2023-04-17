@@ -21,7 +21,7 @@ cookie.setItem("foo", "bar", options) // sets item with key of "foo" and value o
 
 cookie.deleteItem("foo") // deletes item with key of "foo".
 
-cookie.clear()  // clears all key/value pair.
+cookie.clear()  // clears all key/value pairs.
 
 cookie.length // returns the total number of key/value pair.
 ```
